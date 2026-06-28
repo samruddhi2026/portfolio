@@ -1,0 +1,8 @@
+services:
+  - type: web_service
+    name: samruddhi-portfolio
+    env: node
+    plan: free
+    autoDeploy: true
+    buildCommand: npm install && npm run build
+    startCommand: npm start
